@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Orbitron&display=swap" rel="stylesheet">
+<style>*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  color:#fff;
+  background:#0b0a08;
+}
+
+/* HEADER SAME THEME */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 60px;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(10px);
+}
+
+.logo{
+  font-family:'Orbitron',sans-serif;
+  font-size:26px;
+  font-weight:800;
+}
+.logo span{
+  color:#c97c5d;
+  text-shadow:0 0 15px #c97c5d;
+}
+
+nav a{
+  margin:0 10px;
+  text-decoration:none;
+  color:#ccc;
+  padding:10px 18px;
+  border-radius:25px;
+  transition:.3s;
+}
+nav a:hover{
+  background:#c97c5d;
+  color:#000;
+  box-shadow:0 0 20px rgba(201,124,93,.9);
+}
+
+/* STORY SECTIONS */
+.story{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px;
+  position:relative;
+}
+
+/* BACKGROUNDS */
+.section1{
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('images/bg2.jpeg');
+  background-size:cover;
+}
+
+.section2{
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('images/bg3.jpeg');
+  background-size:cover;
+}
+
+.section3{
+  background:
+  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+  url('images/bg4.jpeg');
+  background-size:cover;
+}
+
+/* GLASS CARD (OWNER BOX) */
+.glass-card{
+  background:rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter:blur(15px);
+  max-width:400px;
+  box-shadow:0 0 30px rgba(201,124,93,.4);
+}
+
+.owner-img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:20px;
+  border:3px solid #c97c5d;
+}
+
+/* TEXT BLOCK */
+.text{
+  max-width:600px;
+}
+
+.text h2{
+  font-size:42px;
+  color:#c97c5d;
+  text-shadow:0 0 25px #c97c5d;
+}
+
+.text p{
+  margin-top:15px;
+  color:#ddd;
+  font-size:18px;
+}
+
+/* ANIMATION */
+.reveal{
+  opacity:0;
+  transform:translateY(60px);
+  transition:1s;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#777;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .text h2{
+    font-size:30px;
+  }
+
+  .text p{
+    font-size:15px;
+  }
+
+  .glass-card{
+    padding:20px;
+  }
+
+}</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ABOUT</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- SECTION 1 (OWNER INTRO) -->
+<section class="story section1">
+
+  <div class="glass-card reveal">
+    <img src="images/owner.jpeg" class="owner-img">
+    <h2>oUR SERVICES</h2>
+    <p>
+    <p>
+    <p>
+
+
+## OUR SERVICES
+
+Custom Clothing Design
+Ready-to-Wear Collection
+Alteration & Tailoring
+Personal Styling Consultation
+Online Shopping & Home Delivery
+Bridal & Party Wear Designing
+Fashion Accessories
+Embroidery & Custom Printing
+Corporate & Uniform Designing
+Gift Wrapping & Fashion Gift Cards
+
+
+</p>
+    </p>
+  </div>
+
+</section>
+
+<!-- SECTION 2 -->
+<section class="story section2">
+  <div class="text reveal">
+    <h2>Where It Started</h2>
+    <p>
+      <p>
+<p>
+    ## 🌟 WHERE IT STARTED
+
+FASHIONHUB began with one simple dream—to make premium fashion accessible to everyone. 👕✨ From a small idea fueled by passion ❤️ to a growing brand, every collection reflects creativity, confidence, and quality that inspires people to express themselves every day. 🚀🛍️
+
+</p>
+</p>
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="story section3">
+  <div class="text reveal">
+    <h2>The Experience</h2>
+    <p>
+      <p>
+<p>
+## 🏆 THE EXPERIENCE
+
+With 5+ years of experience 🏆 and 100+ happy customers 😊 across 20+ countries 🌍, FASHIONHUB continues to deliver stylish, high-quality clothing with exceptional service. Every design is crafted with passion, precision, and a commitment to helping you look your absolute best. ✨👑
+</p>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 SPICES. All rights reserved.
+</footer>
+
+<script>function reveal(){
+  let reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((el)=>{
+    let windowHeight = window.innerHeight;
+    let elementTop = el.getBoundingClientRect().top;
+    let visible = 120;
+
+    if(elementTop < windowHeight - visible){
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", reveal);</script>
+</body>
+</html>

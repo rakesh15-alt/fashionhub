@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WOMEN FASHION</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('images/bg2.jpeg');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+}
+
+/* HEADER */
+
+.top-bar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 7%;
+}
+
+.logo{
+
+    font-size:2.2rem;
+
+    font-family:'Cinzel',serif;
+
+    color:#d4a762;
+}
+
+.logo span{
+    color:white;
+}
+
+/* PAGE TITLE */
+
+.page-title{
+
+    text-align:center;
+
+    font-size:3.5rem;
+
+    margin-top:20px;
+
+    color:#d4a762;
+
+    font-family:'Cinzel',serif;
+
+    letter-spacing:4px;
+}
+
+/* MENU GRID */
+
+.menu-grid{
+
+    width:100%;
+
+    padding:60px 5%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:35px;
+}
+
+/* CARDS */
+
+.card{
+
+    position:relative;
+
+    height:360px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,0.06);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    transition:0.6s;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 0 20px rgba(212,167,98,0.08);
+
+    min-width:220px;
+}
+
+.card:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:
+    0 0 30px rgba(212,167,98,0.25);
+
+    rotate:1deg;
+}
+
+/* IMAGE */
+
+.card img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:0.8s;
+}
+
+.card:hover img{
+
+    transform:scale(1.15);
+}
+
+/* OVERLAY */
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+    transparent,
+    rgba(0,0,0,0.95)
+    );
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    padding:20px;
+
+    transform:translateY(70px);
+
+    transition:0.6s;
+}
+
+.card:hover .overlay{
+
+    transform:translateY(0);
+}
+
+/* TEXT */
+
+.overlay h2{
+
+    color:#d4a762;
+
+    font-size:1.3rem;
+
+    margin-bottom:10px;
+
+    font-family:'Cinzel',serif;
+}
+
+.overlay p{
+
+    font-size:0.92rem;
+
+    line-height:1.6;
+
+    margin-bottom:10px;
+}
+
+.price{
+
+    font-size:1.1rem;
+
+    font-weight:bold;
+
+    color:white;
+}
+
+/* BUTTON */
+
+.home-btn{
+
+    display:inline-block;
+
+    margin:20px auto 70px;
+
+    padding:15px 35px;
+
+    background:#d4a762;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+    transition:0.5s;
+}
+
+.home-btn:hover{
+
+    transform:translateY(-5px) scale(1.08);
+
+    background:white;
+}
+
+/* FOOTER */
+
+.footer{
+
+    width:100%;
+
+    background:black;
+
+    padding:40px 20px;
+
+    text-align:center;
+}
+
+.footer h1{
+
+    color:#d4a762;
+
+    font-family:'Cinzel',serif;
+
+    letter-spacing:4px;
+
+    font-size:2rem;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .top-bar{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .logo{
+
+        font-size:1.8rem;
+    }
+
+    .page-title{
+
+        font-size:2.2rem;
+    }
+
+    .menu-grid{
+
+        grid-template-columns:1fr;
+
+        padding:40px 7%;
+    }
+
+    .card{
+
+        height:380px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- TOP -->
+
+<div class="top-bar">
+
+<h1 class="logo">
+FASHION <span>HUB</span>
+</h1>
+
+</div>
+
+<!-- TITLE -->
+
+<h1 class="page-title">
+WOMEN WEAR
+</h1>
+
+<!-- GRID -->
+
+<div class="menu-grid">
+
+<!-- CARD 1 -->
+
+<div class="card">
+
+<img src="images/women1.jpeg">
+
+<div class="overlay">
+
+<h2></h2>
+
+<p>
+TRADITIONAL
+</p>
+
+<div class="price">
+₹899
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="card">
+
+<img src="images/women2.jpeg">
+
+<div class="overlay">
+
+<h2>SAREEE</h2>
+
+<p>
+SAREE IS BAREMINIMUN.
+</p>
+
+<div class="price">
+₹2999
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="card">
+
+<img src="images/women3.jpeg">
+
+<div class="overlay">
+
+<h2>Espresso</h2>
+
+<p>
+BADDIES GONNA LOVE THIS.
+</p>
+
+<div class="price">
+₹949
+</div>
+
+</div>
+
+</div>
+<!-- CARD 4 -->
+
+<div class="card">
+
+<img src="images/women4.jpeg">
+
+<div class="overlay">
+
+<h2>VANNILAONE</h2>
+
+<p>
+CREAMY AS CREAM.
+</p>
+
+<div class="price">
+₹1999
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="card">
+
+<img src="images/women5.jpeg">
+
+<div class="overlay">
+
+<h2>CASUAL</h2>
+
+<p>
+SOMETIMES CASUAL
+</p>
+
+<div class="price">
+₹229
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="card">
+
+<img src="images/women6.jpeg">
+
+<div class="overlay">
+
+<h2>LEHENGA Brew</h2>
+
+<p>
+COULD BE RED VELVET.
+</p>
+
+<div class="price">
+₹699
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+<!-- BUTTON -->
+
+<center>
+
+<a href="index.html" class="home-btn">
+⬅ Back To Home
+</a>
+
+</center>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<h1>
+YOU WILL LOVE THIS
+</h1>
+
+</div>
+
+</body>
+</html>
